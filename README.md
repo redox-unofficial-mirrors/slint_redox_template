@@ -27,3 +27,11 @@ A description how to add your application to Redox as recipes can be found on th
 #### Build redox with your app recipe
 
 It's suggested to use podman to build the Redox with your application check the [README](https://gitlab.redox-os.org/redox-os/redox/-/blob/master/podman/README.md) for more details. It's important to add the package `libfontconfig1-dev` to the podman [Container file](https://gitlab.redox-os.org/redox-os/redox/-/blob/master/podman/redox-base-containerfile). In the readme is also described how to rebuild the container.
+
+## License
+
+The source code of the template is available under the terms of both MIT license.
+(See [LICENSE-MIT](LICENSE-MIT) for details.)
+
+However, because of the use of GPL dependencies, the template, as a whole, is licensed
+under the terms of the GPLv3 (See [LICENSE-GPL](LICENSE-GPL))
