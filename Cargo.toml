@@ -1,0 +1,15 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+edition = "2021"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+slint =  { version = "0.3.2", default-features = false, features = ["compat-0-3-0", "unsafe-single-threaded", "libm"] }
+slint_orbclient = { git = "https://codeberg.org/flovansl/co_sl.git" }
+
+[build-dependencies]
+slint-build = "0.3"

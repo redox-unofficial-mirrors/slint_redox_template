@@ -1,0 +1,9 @@
+[build]
+dependencies = [
+    "expat",
+    "fontconfig",
+    "freetype",
+    "libpng",
+    "zlib"
+]
+template = "cargo"
