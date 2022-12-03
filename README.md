@@ -1,6 +1,6 @@
 # slint_redox_template
 
-A template Slint (https://slint-ui.com/) template for Redox (https://redox-os.org/).
+A  Slint (https://slint-ui.com/) app template for Redox (https://redox-os.org/).
 
 ## How to use
 
