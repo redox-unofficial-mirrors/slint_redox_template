@@ -14,7 +14,7 @@ A template Slint (https://slint-ui.com/) template for Redox (https://redox-os.or
     ```
 3. Set up a sample project with this template
     ```
-    cargo generate --git https://github.com/slint-ui/slint-rust-template --name my-project
+    cargo generate --git https://codeberg.org/flovansl/slint_redox_template --name my-project
     cd my-project
     ```
 
