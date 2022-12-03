@@ -30,7 +30,7 @@ It's suggested to use podman to build the Redox with your application check the 
 
 ## License
 
-The source code of the template is available under the terms of both MIT license.
+The source code of the template is available under the terms of MIT license.
 (See [LICENSE-MIT](LICENSE-MIT) for details.)
 
 However, because of the use of GPL dependencies, the template, as a whole, is licensed
