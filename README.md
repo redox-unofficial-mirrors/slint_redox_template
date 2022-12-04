@@ -14,7 +14,7 @@ A  Slint (https://slint-ui.com/) app template for Redox (https://redox-os.org/).
     ```
 3. Set up a sample project with this template
     ```
-    cargo generate --git https://codeberg.org/flovansl/slint_redox_template --name my-project
+    cargo generate --git https://gitlab.redox-os.org/redox-os/slint_redox_template --name my-project
     cd my-project
     ```
 
@@ -26,7 +26,7 @@ A description how to add your application to Redox as recipes can be found on th
 
 #### Build redox with your app recipe
 
-It's suggested to use podman to build the Redox with your application check the [README](https://gitlab.redox-os.org/redox-os/redox/-/blob/master/podman/README.md) for more details. It's important to add the package `libfontconfig1-dev` to the podman [Container file](https://gitlab.redox-os.org/redox-os/redox/-/blob/master/podman/redox-base-containerfile). In the readme is also described how to rebuild the container.
+It's suggested to use podman to build the Redox with your application check the [README](https://gitlab.redox-os.org/redox-os/redox/-/blob/master/podman/README.md) for more details.
 
 ## License
 

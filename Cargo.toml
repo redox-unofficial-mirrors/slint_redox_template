@@ -9,7 +9,7 @@ build = "build.rs"
 
 [dependencies]
 slint =  { version = "0.3.2", default-features = false, features = ["compat-0-3-0", "unsafe-single-threaded", "libm"] }
-slint_orbclient = { git = "https://codeberg.org/flovansl/co_sl.git" }
+slint_orbclient = "0.1"
 
 [build-dependencies]
 slint-build = "0.3"
