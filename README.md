@@ -28,6 +28,10 @@ A description how to add your application to Redox as recipes can be found on th
 
 It's suggested to use podman to build the Redox with your application check the [README](https://gitlab.redox-os.org/redox-os/redox/-/blob/master/podman/README.md) for more details.
 
+### Run on Linux, macOS, Windows
+
+On other platforms then `Redox` by default Slint will select a suitable backend e.g. `winit` or `qt`. To run the app also on other platforms with `slint_orbclient` backend you can run it with `cargo run --bin my-project --no-default-features --features=orbclient`.
+
 ## License
 
 The source code of the template is available under the terms of MIT license.

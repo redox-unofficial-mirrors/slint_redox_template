@@ -5,7 +5,15 @@ mod generated_code {
 
 pub use generated_code::*;
 
+fn eval(input: &str) -> String {
+    match calc::eval(input) {
+        Ok(s) => s.to_string(),
+        Err(e) => e.into(),
+    }
+}
+
 pub fn main() {
+    #[cfg(any(target_os = "redox", feature = "orbclient"))]
     slint_orbclient::init_config(
         slint_orbclient::Config::default()
             .width(600)
@@ -15,5 +23,15 @@ pub fn main() {
             .title("My slint app"),
     );
 
-    App::new().run();
+    let app = App::new();
+
+    app.on_backspace(|input| {
+        let mut input = input.to_string();
+        input.pop();
+        input.into()
+    });
+
+    app.on_calculate(|input| eval(input.as_str()).into());
+
+    app.run();
 }
