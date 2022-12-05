@@ -6,6 +6,7 @@ mod generated_code {
 pub use generated_code::*;
 
 pub fn main() {
+    #[cfg(target_os = "redox")]
     slint_orbclient::init_config(
         slint_orbclient::Config::default()
             .width(600)
