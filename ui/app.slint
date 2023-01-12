@@ -1,5 +1,23 @@
+import { Button } from "std-widgets.slint";
+
 export App := Window {
-    Text {
-        text: "Hello from Slint";
+    private property <int> count;
+
+    min-width: 200px;
+
+    VerticalLayout {  
+        padding: 8px;
+        spacing: 4px;
+
+        Text {
+            text: "count: " + count;
+        }
+
+        Button {
+            text: "increment";
+            clicked => {  
+                count += 1;
+            }
+        }
     }
 }

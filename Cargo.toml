@@ -5,20 +5,15 @@ authors = ["{{authors}}"]
 edition = "2021"
 build = "build.rs"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[target.'cfg(target_os = "redox")'.dependencies]
-slint = { version = "0.3.2", default-features = false, features = ["compat-0-3-0"] }
-slint_orbclient = "0.1"
-
-
-[target.'cfg(not(target_os = "redox"))'.dependencies]
-slint = "0.3.2"
-slint_orbclient = { version = "0.1", optional = true }
+[dependencies]
+slint = { version = "0.3.4", git = "https://github.com/slint-ui/slint", default-features = false, features = ["compat-0-3-0", "renderer-winit-software"] }
 
 [build-dependencies]
-slint-build = "0.3.2"
+slint-build = { version = "0.3.4", git = "https://github.com/slint-ui/slint" }
+
+[patch.crates-io]
+winit = { git = 'https://github.com/rust-windowing/winit' }
 
 [features]
 default = []
-orbclient = ["slint_orbclient"]
+slint-default = ["slint/default"]
