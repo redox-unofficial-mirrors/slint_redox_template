@@ -1,6 +1,6 @@
 import { Button } from "std-widgets.slint";
 
-export App := Window {
+export component App inherits Window {
     private property <int> count;
 
     min-width: 200px;
@@ -15,6 +15,7 @@ export App := Window {
 
         Button {
             text: "increment";
+            
             clicked => {  
                 count += 1;
             }
