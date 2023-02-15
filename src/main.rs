@@ -6,7 +6,7 @@ mod generated_code {
 pub use generated_code::*;
 
 pub fn main() {
-    let app = App::new();
+    let app = App::new().unwrap();
 
-    app.run();
+    app.run().unwrap();
 }

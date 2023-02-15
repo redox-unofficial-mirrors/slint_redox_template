@@ -6,13 +6,10 @@ edition = "2021"
 build = "build.rs"
 
 [dependencies]
-slint = { version = "0.3.4", default-features = false, features = ["compat-0-3-0", "renderer-winit-software"] }
+slint = { git = "https://github.com/slint-ui/slint", default-features = false, features = ["compat-0-3-0", "renderer-winit-software"] }
 
 [build-dependencies]
-slint-build = { version = "0.3.4" }
-
-[patch.crates-io]
-winit = { git = 'https://github.com/rust-windowing/winit' }
+slint-build = { git = "https://github.com/slint-ui/slint" }
 
 [features]
 default = []
