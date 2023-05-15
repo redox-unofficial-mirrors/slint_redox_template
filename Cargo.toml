@@ -6,7 +6,7 @@ edition = "2021"
 build = "build.rs"
 
 [dependencies]
-slint = { git = "https://github.com/slint-ui/slint", default-features = false, features = ["compat-0-3-0", "renderer-winit-software"] }
+slint = { git = "https://github.com/slint-ui/slint", default-features = false, features = ["compat-1-0", "renderer-winit-software"] }
 
 [build-dependencies]
 slint-build = { git = "https://github.com/slint-ui/slint" }
