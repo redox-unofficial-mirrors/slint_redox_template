@@ -30,7 +30,8 @@ It's suggested to use podman to build the Redox with your application check the 
 
 ### Run on Linux, macOS, Windows
 
-On other platforms then `Redox` by default Slint will select a suitable backend e.g. `winit` or `qt`. To run the app also on other platforms with `slint_orbclient` backend you can run it with `cargo run --bin my-project --no-default-features --features=orbclient`.
+On other platforms then `Redox` to run the app execute `cargo run --bin my-project`. To work on Redox this template uses the `SoftwareRenderer` of Slint to draw
+the user interface. To run the app with the default features of Slint e.g. to use the default renderer execute `cargo run --bin my-project --not-default-features --features=slint-default`.
 
 ## License
 
